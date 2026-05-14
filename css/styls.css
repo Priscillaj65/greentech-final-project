@@ -297,6 +297,21 @@ footer{
 
     .hero-buttons{
         justify-content:center;
-    }
+    }.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: white;
+  color: #2d6a4f;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  background: #e8f5e9;
+}
 
 }
+
