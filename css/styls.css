@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4f9f4;
+    color:#222;
+    line-height:1.6;
+}
+
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#1f5e3b;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#9ee6b3;
+}
+
+#darkModeBtn{
+    border:none;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 10%;
+    gap:60px;
+    flex-wrap:wrap;
+    background:
+    linear-gradient(to right,#dff5e3,#f4f9f4);
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-left h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#1f5e3b;
+}
+
+.hero-left p{
+    max-width:550px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-right{
+    flex:1;
+    text-align:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:550px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+.btn,
+.btn-secondary{
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.btn{
+    background:#2e8b57;
+    color:white;
+}
+
+.btn:hover{
+    background:#17492d;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:2px solid #2e8b57;
+    color:#2e8b57;
+}
+
+.btn-secondary:hover{
+    background:#2e8b57;
+    color:white;
+}
+
+
+.cards-section{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:-70px;
+    padding:0 10%;
+}
+
+.info-card{
+    background:white;
+    width:320px;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-10px);
+}
+
+.info-card h2{
+    margin-bottom:15px;
+    color:#1f5e3b;
+}
+
+
+.about-preview{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:100px 10%;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:25px;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:3rem;
+    margin-bottom:20px;
+    color:#1f5e3b;
+}
+
+.about-text p{
+    margin-bottom:30px;
+}
+
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:60px 10%;
+    background:white;
+}
+
+.stat-box{
+    background:#f4f9f4;
+    width:250px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.stat-box h2{
+    color:#2e8b57;
+    font-size:3rem;
+}
+
+
+.newsletter{
+    text-align:center;
+    padding:100px 10%;
+}
+
+.newsletter h2{
+    margin-bottom:20px;
+    font-size:2.5rem;
+    color:#1f5e3b;
+}
+
+.newsletter-form{
+    margin-top:30px;
+}
+
+.newsletter-form input{
+    padding:15px;
+    width:320px;
+    max-width:80%;
+    border:none;
+    border-radius:30px;
+}
+
+.newsletter-form button{
+    padding:15px 24px;
+    border:none;
+    border-radius:30px;
+    background:#1f5e3b;
+    color:white;
+    cursor:pointer;
+}
+
+
+footer{
+    background:#1f5e3b;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+
+.sr-only{
+    position:absolute;
+    left:-9999px;
+}
+
+
+.dark{
+    background:#111;
+    color:white;
+}
+
+.dark .info-card,
+.dark .stat-box{
+    background:#222;
+    color:white;
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-left h1{
+        font-size:2.8rem;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+}
