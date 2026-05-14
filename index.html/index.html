@@ -1,258 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-    <title>GreenTech Solutions</title>
-
-    <link rel="stylesheet"
-    href="css/styles.css">
-
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenTech Solutions</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
-    <header>
+<header class="nav">
+  <h1>GreenTech</h1>
+  <div class="links">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Resources</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
 
-        <nav class="navbar">
 
-            <div class="logo">
-                🌱 GreenTech
-            </div>
+<section class="hero-clean">
+  <h2>Eco-Friendly Technology for a Better Future</h2>
+  <p>Helping businesses reduce their carbon footprint through smart, simple solutions.</p>
 
-            <ul class="nav-links">
+  <a href="services.html" class="hero-btn">Explore Services</a>
+</section>
 
-                <li><a href="index.html">Home</a></li>
 
-                <li><a href="about.html">About</a></li>
+<section class="about-grid">
 
-                <li><a href="products.html">Products</a></li>
+  <div class="block">
+    <h3>🌱 Sustainability First</h3>
+    <p>We design solutions that reduce environmental impact.</p>
+  </div>
 
-                <li><a href="blog.html">Resources</a></li>
+  <div class="block">
+    <h3>⚡ Smart Technology</h3>
+    <p>Efficient systems powered by modern innovation.</p>
+  </div>
 
-                <li><a href="contact.html">Contact</a></li>
+  <div class="block">
+    <h3>📊 Data Tracking</h3>
+    <p>Monitor carbon usage and improve business decisions.</p>
+  </div>
 
-                <li><a href="final.html">The Final</a></li>
+</section>
 
-            </ul>
 
-            <button id="darkModeBtn">
-                🌙
-            </button>
+<section style="text-align:center; padding:60px 20px;">
+  <h2>Start Building a Greener Future</h2>
+  <p>Join businesses already using sustainable technology.</p>
+  <a href="contact.html" class="hero-btn">Get in Touch</a>
+</section>
 
-        </nav>
 
-    </header>
-
-
-    <section class="hero">
-
-        <div class="hero-left">
-
-            <h1>
-                Sustainable Technology
-                For A Better Tomorrow
-            </h1>
-
-            <p>
-                GreenTech Solutions creates innovative eco-friendly
-                technology that helps businesses reduce waste,
-                save energy, and build a cleaner future.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="products.html"
-                class="btn">
-
-                    Explore Products
-
-                </a>
-
-                <a href="contact.html"
-                class="btn-secondary">
-
-                    Contact Us
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-right">
-
-            <img src="images/hero.jpg"
-            alt="Green technology and sustainability">
-
-        </div>
-
-    </section>
-
-
-    <section class="cards-section">
-
-        <div class="info-card">
-
-            <h2>♻️ Smart Recycling</h2>
-
-            <p>
-                Intelligent systems designed to simplify
-                sustainable waste management.
-            </p>
-
-        </div>
-
-        <div class="info-card">
-
-            <h2>⚡ Energy Efficiency</h2>
-
-            <p>
-                Reduce operational costs with
-                AI-powered energy monitoring.
-            </p>
-
-        </div>
-
-        <div class="info-card">
-
-            <h2>🌍 Carbon Tracking</h2>
-
-            <p>
-                Monitor and improve your company’s
-                environmental impact in real time.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <section class="about-preview">
-
-        <div class="about-image">
-
-            <img src="images/team.jpg"
-            alt="GreenTech team meeting">
-
-        </div>
-
-        <div class="about-text">
-
-            <h2>
-                Innovation Meets Sustainability
-            </h2>
-
-            <p>
-                GreenTech Solutions believes businesses
-                should grow without harming the environment.
-                We combine technology and sustainability
-                to create smarter eco-friendly systems.
-            </p>
-
-            <a href="about.html"
-            class="btn">
-
-                Learn More
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <section class="stats">
-
-        <div class="stat-box">
-
-            <h2>1200+</h2>
-
-            <p>
-                Tons of CO₂ Reduced
-            </p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2>350+</h2>
-
-            <p>
-                Businesses Supported
-            </p>
-
-        </div>
-
-        <div class="stat-box">
-
-            <h2>70%</h2>
-
-            <p>
-                Average Energy Savings
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <section class="newsletter">
-
-        <h2>
-            Stay Connected 🌱
-        </h2>
-
-        <p>
-            Subscribe for sustainability news,
-            eco-friendly tips, and GreenTech updates.
-        </p>
-
-        <form class="newsletter-form">
-
-            <label for="email"
-            class="sr-only">
-
-                Email Address
-
-            </label>
-
-            <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required>
-
-            <button type="submit">
-
-                Subscribe
-
-            </button>
-
-        </form>
-
-    </section>
-
-
-    <footer>
-
-        <p>
-            © 2026 GreenTech Solutions
-        </p>
-
-    </footer>
-
-    <script src="js/script.js"></script>
+<footer>
+  <p>© 2026 GreenTech Solutions</p>
+</footer>
 
 </body>
 </html>
